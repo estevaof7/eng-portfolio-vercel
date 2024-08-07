@@ -1,0 +1,57 @@
+<div class="project" id="pro-3">
+
+    <div class="img-container">
+        <a href="https://estevaof7.github.io/equacao2grau/" target="_blank"><img src="assets/img/eq2grau.gif"
+                alt="Project 2"></a>
+        <div class="project-tech">
+            <div>
+                <img src="assets/img/js-svgrepo-com.svg" alt="JS Logo" class="js-logo">
+                <p>JS: 64.2%</p>
+            </div>
+            <div>
+                <img src="assets/img/html-5-svgrepo-com.svg" alt="HTML Logo" class="html-logo">
+                <p>HTML:</br>20.5%</p>
+            </div>
+            <div>
+                <img src="assets/img/css-3-svgrepo-com.svg" alt="CSS Logo" class="css-logo">
+                <p>CSS: 15.3%</p>
+            </div>
+        </div>
+        <div class="barra">
+            <div class="js-bar"></div>
+            <div class="html-bar"></div>
+            <div class="css-bar"></div>
+        </div>
+    </div>
+
+    <div>
+        <% if(isEnglish) { %>
+            <h1>Quadratic Equation</h1>
+        <p>As a mathematician, one of my first projects when learning JS was using it to solve quadratic equations. I have developed it in a way that the extraction of both Real and Imaginary roots are possible. In addition to that, it also works for first-degree equations; just add <var>0</var> to the value of <var>a</var>.</p>
+        <% } else { %>
+            <h1>Equação do Segundo Grau</h1>
+                    <p>Como matemático, um dos meus primeiros projetos ao aprender JS foi utilizá-lo para resolver
+                        equações do 2<sup>o</sup> grau. Desenvolvi de maneira que seja possível a extração de raízes
+                        reais e imaginárias. Além de funcionar também normalmente para resolver equações do
+                        1<sup>o</sup> grau; basta atribuir "0" ao valor de <var>a</var>.</p>
+            <% } %>
+
+        <div class="buttons">
+            <a href="https://estevaof7.github.io/equacao2grau/" target="_blank"><button class="try-it">
+                <% if(isEnglish) { %>
+                    Try it here!
+                <% } else { %>
+                    Teste aqui!
+                <% } %>
+            </button></a>
+            <a href="https://github.com/estevaof7/equacao2grau" target="_blank"><button
+                    class="repository">
+                    <% if(isEnglish) { %>
+                        Repository
+                    <% } else { %>
+                        Repositório
+                    <% } %>
+                </button></a>
+        </div>
+    </div>
+</div>

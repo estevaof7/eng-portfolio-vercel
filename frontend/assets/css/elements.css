@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --pg2-text-color: #f0f0f0;
+    --html-color: #E64C18;
+    --css-color: #2465F1;
+    --js-color: #F0DC4E;
+    --java-color: #EC2025;
+    --mysql-color: #F29209;
+    --ejs-color: #8BA438;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+h2 {
+    font-size: 2.7rem;
+}
+p {
+    font-size: 2.3rem;
+}
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: center;
+    gap: 5rem;
+    background-color: #FFFFFF;
+    z-index: 2;
+
+    & a {
+        color: black;
+        display: block;
+        padding: 1rem 0;
+        position: relative;
+        font-size: 2rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0.8rem;
+            left: 50%;
+            width: 0;
+            height: 0.2rem;
+            background: black;
+            transition: all 300ms ease-in-out;
+        }
+        &:hover::after {
+            width: 90%;
+            left: 5%;
+        }
+        &:active {color: #666666;}
+    }
+}
+
+footer {
+    background-color: rgb(20, 20, 20);
+
+    & section {
+        max-width: 60vw;
+        margin: 0 auto;
+        padding: 5rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        & a,
+        & div {
+            display: flex;
+            color: #b8b8b8;
+            align-items: center; 
+        }
+
+        & p {
+            font-size: 1.5rem; 
+        }
+
+        & img {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 0.6rem;
+        }
+    }
+}
+
+

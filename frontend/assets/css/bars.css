@@ -1,0 +1,54 @@
+/* 
+As widths vão ser um pouco menos que a porcentagem do github para tentar deixar um espaço de 1rem entre as barrinhas.
+
+A barra que estiver à direita deve ter right: 0
+A brra que estiver no meio deve ter left a porcentagem um pouco a mais da width da barra à esquerda
+
+*/
+
+#pro-6 {
+    .js-bar {width: 65%;}
+    .ejs-bar {width: 34%; right: 0;}
+
+    .project-tech div:nth-child(2) {right: 0;}
+}
+
+#pro-5 {
+    .java-bar {width: 94%;}
+    .mysql-bar {width: 5%; right: 0;}
+
+    .project-tech div:nth-child(2) {right: 0;}
+}
+
+#pro-4 {
+    .html-bar {width: 62%;}
+    .css-bar {width: 37%; right: 0;}
+
+    .project-tech div:nth-child(2) {left: 62.5%;}
+}
+
+#pro-3 {
+    .js-bar {width: 63.2%;}
+    .html-bar {width: 20.5%; left: 64.3%;}
+    .css-bar {width: 14.3%; right: 0;}
+
+    .project-tech div:nth-child(2) {left: 63.2%;}
+    .project-tech div:nth-child(3) {left: 84.7%;}
+}
+
+
+#pro-2 { 
+    .css-bar {width: 42.5%;}
+    .js-bar {width: 41.7%; left: 43.5%;}
+    .html-bar {width: 13.8%; right: 0;}
+
+    .project-tech div:nth-child(2) {left: 43.5%;}
+    .project-tech div:nth-child(3) {left: 84.2%;}
+}
+
+#pro-1 {
+    .css-bar {width: 63%;}
+    .html-bar {width: 36%; right: 0;}
+
+    .project-tech div:nth-child(2) {left: 63%;}
+}

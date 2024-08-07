@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Estêvão</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/bars.css">
+</head>
+
+<body>
+    <nav>
+
+        <% if(isEnglish) { %>
+        <a href="#pg-1">About</a>
+        <a href="#pg-2">Projects</a>
+        <a href="#contact">Contact</a>
+            <% } else { %>
+            <a href="#pg-1">Sobre</a>
+            <a href="#pg-2">Projetos</a>
+            <a href="#contact">Contato</a>
+            <% } %>
+
+        
+    </nav>
+    <div id="pg-1" class="pg">
+        <section class="container">
+            <picture>
+                <img src="assets/img/profile-pic.jpeg" alt="Foto de perfil">
+            </picture>
+            <div id="about">
+
+                <h1>Estêvão Ferreira</h1>
+
+                <% if(isEnglish) { %>
+                    <h2>Junior Developer JavaScript & Java</h2>
+                    <p>Hey! My name is Estêvão, I have a degree in System Analysis and Development and in Mathematics. Here are some of my projects; I hope you like it!</p>
+                <% } else { %>
+                    <h2>Desenvolvedor Júnior JavaScript e Java</h2>
+                    <p>Olá, muito prazer! Meu nome é Estêvão, sou formado em Análise e
+                    Desenvolvimento de Sistemas e em Matemática. Desenvolvi este ambiente
+                    para estar apresentando alguns de meus projetos de maneira simplificada. Espero que goste!</p>
+                <% } %>
+
+                
+                <div id="tech-stack">
+                    <p><b>Tech Stack</b></p>
+                    <img src="assets/img/js-svgrepo-com.svg" alt="JS Logo">
+                    <img id="node-logo" src="assets/img/nodejs.svg" alt="Node Logo">
+                    <img src="assets/img/java-icon.svg" alt="Java Logo">
+                    <img id="mysql-logo" src="assets/img/mysql-logo.svg" alt="MySQL Logo">
+                    <img id="mongo-logo" src="assets/img/mongodb-ar21.svg" alt="MongoDB Logo">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="pg-2" class="pg">
+        <section class="projects">
+            <%- include('projects/project6') %>
+            <%- include('projects/project5') %>
+            <%- include('projects/project4') %>
+            <%- include('projects/project3') %>
+            <%- include('projects/project2') %>
+        </section>
+    </div>
+    <footer id="contact">
+        <section>
+            <a href="https://www.linkedin.com/in/estevaof7" target="_blank">
+                <img src="assets/img/icons8-linkedin.svg" alt="Linkedin Logo">
+                <p>linkedin.com/in/estevaof7</p>
+            </a>
+            <a href="https://github.com/estevaof7" target="_blank">
+                <img src="assets/img/icons8-github-60.svg" alt="Github Logo">
+                <P>github.com/estevaof7</P>
+            </a>
+            <div>
+                <img src="assets/img/icons8-mail-96.png" alt="E-mail icon">
+                <p>estevaofset@hotmail.com</p>
+            </div>
+        </section>
+    </footer>
+
+    <a class="back-to-top" href="#pg-1">➤</a>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

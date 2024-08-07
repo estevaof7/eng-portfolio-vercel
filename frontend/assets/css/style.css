@@ -1,0 +1,191 @@
+#pg-1 {
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23f7f7f7' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23efefef' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23e7e7e7' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23dfdfdf' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23D7D7D7' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+
+    .container {
+        display: flex;
+        max-width: 60vw;
+        min-width: 700px;
+        margin: 20rem auto;
+        gap: 10rem;
+    }
+
+    & picture img {
+        border-radius: 50%;
+        width: 35rem;
+        height: 35rem;
+    }
+
+}
+
+#pg-2 {
+    background: rgb(20, 20, 20);
+    min-height: 100vh;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+
+    > p {
+        margin: 2rem 0 4rem 0;
+    }
+
+}
+#tech-stack {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > img {
+        height: 50px;
+        width: 50px;
+    }
+    #node-logo {
+        height: 70px;
+        width: 70px;
+    }
+    #mysql-logo {
+        height: 90px;
+        width: 90px;
+        margin: 0 -20px;
+    }
+    #mongo-logo {
+        height: 60px;
+        width: 120px;
+    }
+}
+
+/* *** PROJECT SECTION *** */
+.projects {
+    max-width: 70vw;
+    margin: 0 auto;
+    color: var(--pg2-text-color);
+    padding: 10rem 0 10rem 0;
+}
+.project {
+    display: flex;
+    margin: 12rem 0 12rem 0;
+    gap: 5rem;
+    justify-content: space-between;
+
+    & h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    & p {
+        font-size: 1.8rem;
+        margin: 2rem 0 3rem 0;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10rem;
+
+        & button {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #a0fffa;
+            border-radius: 5px;
+            padding: 0.8rem 1.5rem;
+            background: none;
+            cursor: pointer; 
+        }
+    }
+
+    .img-container {        
+
+        & a img {
+            width: 50rem;
+            height: 28rem;
+            border-radius: 10px;
+
+            &:hover {
+                transform: scale(1.08);
+                transition: all 200ms ease-in-out;
+                border: solid 0.2rem #FFFFFF;
+            }
+            &:active {
+                opacity: 0.7;
+            }
+        }
+
+        .project-tech {
+            display: flex;
+            position: relative;
+            height: 5rem;
+            align-items: center;
+            margin-top: 1rem;
+
+            & div {
+                display: flex;
+                position: absolute;
+                align-items: center;
+            }
+            & img {
+                width: 3rem;
+                height: 3rem;
+                margin-right: 0.5rem;
+            }
+            .js-logo {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            .mysql-logo {
+                width: 6rem;
+                height: 6rem;
+            }
+            .java-logo {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+            & p {
+                font-size: 1.5rem;
+                margin: 0;
+            }
+        }
+
+        .barra {
+            height: 0.5rem;
+            border-radius: 10px;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        
+            & div {
+                height: 100%;
+                position: absolute;
+            }
+
+            .html-bar {background-color: var(--html-color);}
+            .css-bar {background-color: var(--css-color);}
+            .js-bar {background-color: var(--js-color);}
+            .java-bar {background-color: var(--java-color);}
+            .mysql-bar {background-color: var(--mysql-color);}
+            .ejs-bar {background-color: var(--ejs-color);}
+
+        }
+    }
+
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #ffffff60;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    transform: rotate(-90deg);
+    font-size: 2rem;
+}
+

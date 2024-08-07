@@ -1,0 +1,114 @@
+<!-- 
+Quando for adicionar mais projetos... Esse primeiro é para a imagem na direita e o segundo é para a imagem na esquerda.
+
+A div principal tem que ter um id do tipo "pro-1".
+
+Deixei no project-tech e na barra como exemplo mas tenho que mudar cada um de acordo com as linguagens que eu usei e a porcentagem que o github dá.
+
+Editar as barras em bars.css. (observações lá)
+
+<% if(isEnglish) { %>
+<% } else { %>
+<% } %>
+--> 
+
+<div class="project">
+    <div>
+
+        <% if(isEnglish) { %>
+            <h1>English Title</h1>
+            <p>English Description</p>
+            <% } else { %>
+            <h1>Título em Português</h1>
+            <p>Descrição em Português</p>
+            <% } %>
+
+        <div class="buttons">
+            <a href="#" target="_blank"><button class="try-it">
+                <% if(isEnglish) { %>
+                    Try it here!
+                <% } else { %>
+                    Teste aqui!
+                <% } %>
+            </button></a>
+            <a href="#" target="_blank"><button class="repository">
+                <% if(isEnglish) { %>
+                    Repository
+                <% } else { %>
+                    Repositório
+                <% } %>
+            </button></a>
+        </div>
+    </div>
+    <div class="img-container">
+        <a href="#" target="_blank"><img src="" alt="Project 5"></a>
+        <div class="project-tech">
+            <div>
+                <img src="assets/img/js-svgrepo-com.svg" alt="JS Logo" class="js-logo">
+                <p>JS: 64.2%</p>
+            </div>
+            <div>
+                <img src="assets/img/html-5-svgrepo-com.svg" alt="HTML Logo" class="html-logo">
+                <p>HTML:</br>20.5%</p>
+            </div>
+            <div>
+                <img src="assets/img/css-3-svgrepo-com.svg" alt="CSS Logo" class="css-logo">
+                <p>CSS: 15.3%</p>
+            </div>
+        </div>
+        <div class="barra">
+            <div class="js-bar"></div>
+            <div class="html-bar"></div>
+            <div class="css-bar"></div>
+        </div>
+    </div>
+</div>
+
+<div class="project">
+    <div class="img-container">
+        <a href="#" target="_blank"><img src="" alt="Project 6"><a/>
+        <div class="project-tech">
+                <div>
+                <img src="assets/img/js-svgrepo-com.svg" alt="JS Logo" class="js-logo">
+                <p>JS: 64.2%</p>
+            </div>
+            <div>
+                <img src="assets/img/html-5-svgrepo-com.svg" alt="HTML Logo" class="html-logo">
+                <p>HTML:</br>20.5%</p>
+            </div>
+            <div>
+                <img src="assets/img/css-3-svgrepo-com.svg" alt="CSS Logo" class="css-logo">
+                <p>CSS: 15.3%</p>
+            </div>
+        </div>
+        <div class="barra">
+            <div class="js-bar"></div>
+            <div class="html-bar"></div>
+            <div class="css-bar"></div>
+        </div>
+    </div>
+    <div>
+        <h1>English Title</h1>
+            <p>English Description</p>
+            <% } else { %>
+            <h1>Título em Português</h1>
+            <p>Descrição em Português</p>
+            <% } %>
+        <div class="buttons">
+            <a href="#" target="_blank"><button class="try-it">
+                <% if(isEnglish) { %>
+                    Try it here!
+                <% } else { %>
+                    Teste aqui!
+                <% } %>
+            </button></a>
+            <a href="#" target="_blank"><button class="repository">
+                <% if(isEnglish) { %>
+                    Repository
+                <% } else { %>
+                    Repositório
+                <% } %>
+            </button></a>
+        </div>
+    </div>
+</div> 
