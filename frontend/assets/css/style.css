@@ -48,8 +48,7 @@
                     #mysql-logo {
                         height: calc(var(--logo-size) * 9 / 5);
                         width: calc(var(--logo-size) * 9 / 5);
-                        margin: 0 -20px; 
-                        /* ************* ver depois esse */
+                        margin: 0 calc(-1 * var(--logo-size) * 2 / 5);
                     }
                     #mongo-logo {
                         height: calc(var(--logo-size) * 6 / 5);
