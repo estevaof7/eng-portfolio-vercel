@@ -8,18 +8,60 @@
 
     .container {
         display: flex;
-        max-width: 60vw;
-        min-width: 700px;
+        max-width: 1150px;
         margin: 20rem auto;
         gap: 10rem;
-    }
 
-    & picture img {
-        border-radius: 50%;
-        width: 35rem;
-        height: 35rem;
-    }
+        & picture img {
+            border-radius: 50%;
+            width: 35rem;
+            height: 35rem;
+        }
 
+        #about {
+            display: flex;
+            flex-direction: column;
+        
+            > p {
+                margin: 2rem 0 4rem 0;
+            }
+
+            #tech-stack {
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+
+                #logos {
+                    flex-grow: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    & img {
+                        height: var(--logo-size);
+                        width: var(--logo-size);
+                    }
+                    #node-logo {
+                        height: calc(var(--logo-size) * 7 / 5);
+                        width: calc(var(--logo-size) * 7 / 5);
+                    }
+                    #mysql-logo {
+                        height: calc(var(--logo-size) * 9 / 5);
+                        width: calc(var(--logo-size) * 9 / 5);
+                        margin: 0 -20px; 
+                        /* ************* ver depois esse */
+                    }
+                    #mongo-logo {
+                        height: calc(var(--logo-size) * 6 / 5);
+                        width: calc(var(--logo-size) * 12 / 5); 
+                    }
+                }
+            }
+            
+        
+        }
+
+    }
 }
 
 #pg-2 {
@@ -27,49 +69,32 @@
     min-height: 100vh;
 }
 
-#about {
-    display: flex;
-    flex-direction: column;
-
-    > p {
-        margin: 2rem 0 4rem 0;
-    }
-
-}
-#tech-stack {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    > img {
-        height: 50px;
-        width: 50px;
-    }
-    #node-logo {
-        height: 70px;
-        width: 70px;
-    }
-    #mysql-logo {
-        height: 90px;
-        width: 90px;
-        margin: 0 -20px;
-    }
-    #mongo-logo {
-        height: 60px;
-        width: 120px;
-    }
-}
-
 /* *** PROJECT SECTION *** */
+
 .projects {
     max-width: 70vw;
     margin: 0 auto;
     color: var(--pg2-text-color);
     padding: 10rem 0 10rem 0;
+
+    /* o lado que vai ficar visível */
+
+    .project:nth-child(odd) {
+        .right {
+            display: block;
+        }
+    }
+    .project:nth-child(even) {
+        .left {
+            display: block;
+        }
+    }
+
 }
+
 .project {
     display: flex;
-    margin: 12rem 0 12rem 0;
+    margin: 12rem 0;
     gap: 5rem;
     justify-content: space-between;
 
@@ -98,7 +123,9 @@
         }
     }
 
-    .img-container {        
+    .img-container {     
+        
+        display: none;
 
         & a img {
             width: 50rem;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/elements.css">
     <link rel="stylesheet" href="assets/css/bars.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
@@ -25,6 +26,7 @@
 
         
     </nav>
+
     <div id="pg-1" class="pg">
         <section class="container">
             <picture>
@@ -47,15 +49,18 @@
                 
                 <div id="tech-stack">
                     <p><b>Tech Stack</b></p>
-                    <img src="assets/img/js-svgrepo-com.svg" alt="JS Logo">
-                    <img id="node-logo" src="assets/img/nodejs.svg" alt="Node Logo">
-                    <img src="assets/img/java-icon.svg" alt="Java Logo">
-                    <img id="mysql-logo" src="assets/img/mysql-logo.svg" alt="MySQL Logo">
-                    <img id="mongo-logo" src="assets/img/mongodb-ar21.svg" alt="MongoDB Logo">
+                    <div id="logos">
+                        <img src="assets/img/js-svgrepo-com.svg" alt="JS Logo">
+                        <img id="node-logo" src="assets/img/nodejs.svg" alt="Node Logo">
+                        <img src="assets/img/java-icon.svg" alt="Java Logo">
+                        <img id="mysql-logo" src="assets/img/mysql-logo.svg" alt="MySQL Logo">
+                        <img id="mongo-logo" src="assets/img/mongodb-ar21.svg" alt="MongoDB Logo">
+                    </div>
                 </div>
             </div>
         </section>
     </div>
+    
     <div id="pg-2" class="pg">
         <section class="projects">
             <%- include('projects/project6') %>
@@ -65,6 +70,7 @@
             <%- include('projects/project2') %>
         </section>
     </div>
+
     <footer id="contact">
         <section>
             <a href="https://www.linkedin.com/in/estevaof7" target="_blank">
@@ -73,7 +79,7 @@
             </a>
             <a href="https://github.com/estevaof7" target="_blank">
                 <img src="assets/img/icons8-github-60.svg" alt="Github Logo">
-                <P>github.com/estevaof7</P>
+                <p>github.com/estevaof7</p>
             </a>
             <div>
                 <img src="assets/img/icons8-mail-96.png" alt="E-mail icon">

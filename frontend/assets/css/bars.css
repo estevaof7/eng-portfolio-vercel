@@ -10,7 +10,7 @@ A brra que estiver no meio deve ter left a porcentagem um pouco a mais da width 
     .js-bar {width: 65%;}
     .ejs-bar {width: 34%; right: 0;}
 
-    .project-tech div:nth-child(2) {right: 0;}
+    .project-tech div:nth-child(2) {left: 65.5%;}
 }
 
 #pro-5 {

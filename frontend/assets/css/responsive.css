@@ -1,0 +1,156 @@
+@media (max-width: 1350px) {
+
+    :root {
+        --logo-size: 4vw;
+    }
+
+    #pg-1 {
+        .container {
+            max-width: 85vw;
+
+            #about #tech-stack {
+                display: block;
+            }
+        }
+    }
+
+    .projects {
+        max-width: 80vw;
+    }
+    .project {
+        .img-container {
+            & a img {
+                width: 30vw;
+                height: 16.8vw;
+                min-width: 35rem;
+                min-height: 19.6rem;
+            }
+        }
+    }
+
+    footer section {
+        max-width: 85vw;
+    }
+}
+
+@media (max-width: 970px) {
+
+    :root {
+        --logo-size: 40px;
+    }
+
+    #pg-1 {
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            #about #tech-stack {
+                display: flex;
+            }
+        }
+    }
+
+    .projects {
+        .project:nth-child(n) {
+
+            flex-direction: column;
+            align-items: start;
+            
+            .img-container {
+                width: 100%;
+            }
+
+            .right {
+                display: block;
+
+                & a img {
+                    width: 100%;
+                    height: 56%;
+                }
+
+            }
+            .left {
+                display: none;
+            }
+        }
+    }
+
+    footer {
+        & section {
+            justify-content: start;
+            gap: 1rem;
+
+            & a {
+                & p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    :root {
+        --logo-size: 7vw;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3.38rem;
+    }
+    h2 {
+        font-size: 2.03rem;
+    }
+    p {
+        font-size: 1.73rem;
+    }
+
+    #pg-1 .container #about #tech-stack {
+        display: block;
+
+    }
+
+    .project {
+        & h1 {
+            font-size: 3rem;
+        }
+        & p {
+            font-size: 1.35rem;
+        }
+        .buttons {
+    
+            & button {
+                font-size: 1.2rem;
+            }
+        }
+        .project-tech {
+            & p {
+                font-size: 1.13rem;
+            }
+        }
+    }
+
+    footer {
+        & p {
+            font-size: 1.13rem; 
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .project .img-container {
+        & a img {
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .project-tech div p {
+            display: none;
+        }
+    }
+}

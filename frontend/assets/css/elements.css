@@ -9,6 +9,8 @@
     --java-color: #EC2025;
     --mysql-color: #F29209;
     --ejs-color: #8BA438;
+
+    --logo-size: 50px;
 }
 html {
     font-size: 62.5%;
