@@ -6,6 +6,15 @@ A brra que estiver no meio deve ter left a porcentagem um pouco a mais da width 
 
 */
 
+#pro-7 {
+    .js-bar {width: 51.4%;}
+    .html-bar {width: 31.1%; left: 52.4%;}
+    .css-bar {width: 16%; right: 0;}
+
+    .project-tech div:nth-child(2) {left: 51.4%;}
+    .project-tech div:nth-child(3) {left: 82.5%;}
+}
+
 #pro-6 {
     .js-bar {width: 65%;}
     .ejs-bar {width: 34%; right: 0;}
