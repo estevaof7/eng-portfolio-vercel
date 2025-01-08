@@ -11,6 +11,6 @@ app.set('views', path.resolve(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs'); 
 
 app.use(router);
-app.listen(3000, () => {
-    console.log('Servidor executando na porta 3000: http://localhost:3000')
+app.listen(3001, () => {
+    console.log('Servidor executando na porta 3001: http://localhost:3001')
 });
